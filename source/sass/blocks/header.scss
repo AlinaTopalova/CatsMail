@@ -1,1 +1,71 @@
-//Тут будет scss для header
+/*header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo-wrap {
+  flex-grow: 1;
+}
+
+.header__logo-image {
+  fill: $black;
+  cursor: pointer;
+
+  &:hover {
+    fill: $light-blue;
+  }
+
+  &:active {
+    fill: $blue;
+  }
+}
+
+.header__menu-list {
+  display: flex;
+  padding-top: 10px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 21px;
+  list-style: none;
+  cursor: pointer;
+  color: $light-blue;
+}
+
+.header__menu-item a {
+  color: $blue2;
+  margin-right: 19px;
+  text-decoration: underline 1px $blue2 solid;
+
+  &:hover {
+    color: $light-blue;
+    text-decoration: none;
+  }
+
+  &:active {
+    color: $blue;
+  }
+}
+
+.header__menu-user-button {
+  display: flex;
+  padding: 6px 29px 5px 29px;
+  margin-top: 22px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  line-height: 21px;
+  width: 100px;
+  height: 32px;
+  background-color: $blue2;
+  color: $white;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $light-blue;
+  }
+
+  &:active {
+    background-color: $blue;
+    color: $white-opacity;
+  }
+}
+
+

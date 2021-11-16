@@ -1,12 +1,19 @@
 //Template Colors
-//Можно добавлять цвета из темы
-$main-color-text: #000000;
+$black: #000000;
+$white: #ffffff;
+$blue: #0A6EA6;
+$blue2: #0078BB;
+$light-blue: #62B9EA;
+
+$white-opacity: rgba(255, 255, 255, 0.6);
 
 
-//Template breakpoints
-$mobile-width: 320px;
-$tablet-width: 768px;
-$desktop-width: 1150px;
+//Container width
+$desktop-width: 999px;
+$mobile-width: 335px;
+
+//Breakpoints
+$mobile-breakpoint: 767px;
 
 //Template retina media
 $retina-dpi: 144dpi;
@@ -14,7 +21,7 @@ $retina-dppx: 1.5dppx;
 
 
 //Template Fonts for BODY
-$main-fonts: "Open-Sans", "Arial", sans-serif;
-$sec-fonts: "Open-Sans", "Arial", sans-serif;
-$main-font-size: 17px;
-$main-font-weight: 500;
+$main-fonts: "PT Sans", "Arial", sans-serif;
+$sec-fonts: "PT Sans Narrow", "Arial", sans-serif;
+$main-font-size: 16px;
+$main-font-weight: 400;

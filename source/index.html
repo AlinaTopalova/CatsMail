@@ -2,12 +2,66 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Start Template</title>
+    <title>Котопочта</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
     <!-- <link rel="preload" href="" as="font" crossorigin="anonymous"> Опционально --> 
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-<body>
-	<h1>Hello World</h1>
-</body>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__logo-wrap">
+          <a class="header__logo">
+            <svg class="header__logo-image" width="286" height="83" role="img" aria-label="Логотип Котопочта">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a>Забрать себе кота</a>
+          </li>
+          <li class="header__menu-item">
+            <a>Задонатить на корм</a>
+          </li>
+        </ul>
+        <a class="header__menu-user-button">Войти</a>
+      </header>
+      <main>
+        <section class="message">
+          <h1 class="visually-hidden">Котопочта</h1>
+          <section class="message__details">
+            <h2 class="message__details-title">Как это работает?</h2>
+            <p class="message__details-descr message__details-descr--first">Наши коты любят,когда с ними разговаривают. Напишите письмо, и мы прочитаем его котам, когда они придут почесать пузо.</p>
+            <h2 class="message__details-title">Что передать котам?</h2>
+            <p class="message__details-descr message__details-descr--second">Можно рассказать где вы видели вкусных мышей,какого размера синицы прилетели в город, или просто интересную историю из жизни.</p>
+          </section>
+          <section class="message__text">
+            <h3 class="message__text-title">Сообщение</h3>
+            <textarea placeholder="Что-нибудь хорошее"></textarea>
+          </section>
+          <section class="message__options">
+            <h3 class="message__options-title">Дополнительные опции</h3>
+            <input class="message__option-checkbox visually-hidden" type="checkbox" id="option-nose" name="option" value="nose" checked>
+            <label for ="option-nose" class="message__option-label">Сделать пуньк в нос</label>
+            <input class="message__option-checkbox visually-hidden" type="checkbox" id="option-yummy" name="option" value="yummy" checked>
+            <label for ="option-yummy" class="message__option-label message__option-label--second">Угостить вкусняшкой</label>
+          </section>
+          <section class="message__contacts">
+            <h3 class="message__contacts-title">Контакты для связи</h3>
+            <input type="text">
+          </section>
+          <article class="message__cats-gallery">
+            <h2>Довольные коты</h2>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>

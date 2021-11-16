@@ -1,0 +1,128 @@
+.message {
+  display: grid;
+  grid-template-columns: 660px 300px;
+  column-gap: 40px;
+  row-gap: 31px;
+  padding-top: 44px;
+}
+
+.message__cats-gallery {
+  grid-column: 2/3;
+  grid-row: 1/5;
+}
+
+.message__details-title {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 42px;
+  line-height: 54px;
+  margin: 0 0 10px;
+}
+
+.message__details-descr {
+  font-family: "PT Sans", "Arial", sans-serif;
+  margin: 0 0 40px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 21px;
+}
+
+.message__details-descr--second {
+  margin-bottom: 0;
+}
+
+.message__text-title {
+  margin: 0 0 16px;
+  font-family: "PT Sans Narrow";
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.message__text textarea {
+  width: 660px;
+  height: 160px;
+  padding: 9px 10px;
+}
+
+.message__options-title {
+  margin: 0 0 18px;
+  font-family: "PT Sans Narrow";
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.message__options {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.message__contacts-title {
+  margin: 0 0 16px;
+  font-family: "PT Sans Narrow";
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.message__option-checkbox + label {
+  cursor: pointer;
+}
+
+.message__option-label {
+  font-family: "PT Sans", "Arial", sans-serif;
+  position: relative;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 21px;
+  padding-left: 34px;
+  margin-bottom: 32px;
+}
+
+.message__option-label--second {
+  margin-bottom: 0;
+}
+
+.message__option-label::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+
+.message__option-checkbox:hover + label::before {
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.message__option-checkbox {
+  position: relative;
+}
+
+.message__option-checkbox:active + label::before {
+  border: 2px solid $light-blue;
+  background-image: url("../img/checkbox/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.message__option-checkbox:checked + label::before {
+  background-image: url("../img/checkbox/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+// .message__option-checkbox:checked::after {
+//   position: absolute;
+//   content: "";
+//   top: -2px;
+//   left: 0px;
+//   width: 24px;
+//   height: 24px;
+//   background-image: url("../img/checkbox/checked.svg");
+// }
+
+
