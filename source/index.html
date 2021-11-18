@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
-    <!-- <link rel="preload" href="" as="font" crossorigin="anonymous"> Опционально --> 
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -25,40 +24,56 @@
         </div>
         <ul class="header__menu-list">
           <li class="header__menu-item">
-            <a>Забрать себе кота</a>
+            <a>Забрать кота себе</a>
           </li>
           <li class="header__menu-item">
             <a>Задонатить на корм</a>
           </li>
         </ul>
-        <a class="header__menu-user-button">Войти</a>
+        <a class="button header__menu-user-button">Войти</a>
       </header>
       <main>
         <section class="message">
           <h1 class="visually-hidden">Котопочта</h1>
           <section class="message__details">
             <h2 class="message__details-title">Как это работает?</h2>
-            <p class="message__details-descr message__details-descr--first">Наши коты любят,когда с ними разговаривают. Напишите письмо, и мы прочитаем его котам, когда они придут почесать пузо.</p>
+            <p class="message__details-descr message__details-descr--first">Наши коты любят,когда с ними разговаривают.Напишите письмо, и мы прочитаем его котам, когда они придут почесать пузо.</p>
             <h2 class="message__details-title">Что передать котам?</h2>
-            <p class="message__details-descr message__details-descr--second">Можно рассказать где вы видели вкусных мышей,какого размера синицы прилетели в город, или просто интересную историю из жизни.</p>
+            <p class="message__details-descr message__details-descr--second">Можно рассказать где вы видели вкусных мышей,какого размера синицы прилетели в город,или просто интересную историю из жизни.</p>
           </section>
-          <section class="message__text">
-            <h3 class="message__text-title">Сообщение</h3>
-            <textarea placeholder="Что-нибудь хорошее"></textarea>
-          </section>
-          <section class="message__options">
-            <h3 class="message__options-title">Дополнительные опции</h3>
-            <input class="message__option-checkbox visually-hidden" type="checkbox" id="option-nose" name="option" value="nose" checked>
-            <label for ="option-nose" class="message__option-label">Сделать пуньк в нос</label>
-            <input class="message__option-checkbox visually-hidden" type="checkbox" id="option-yummy" name="option" value="yummy" checked>
-            <label for ="option-yummy" class="message__option-label message__option-label--second">Угостить вкусняшкой</label>
-          </section>
-          <section class="message__contacts">
-            <h3 class="message__contacts-title">Контакты для связи</h3>
-            <input type="text">
-          </section>
-          <article class="message__cats-gallery">
-            <h2>Довольные коты</h2>
+          <form class="form message__form">
+            <section class="form__text">
+              <h3 class="form__text-title">Сообщение</h3>
+              <textarea placeholder="Что-нибудь хорошее"></textarea>
+            </section>
+            <section class="form__options">
+              <h3 class="form__options-title">Дополнительные опции</h3>
+              <input class="form__option-checkbox visually-hidden" type="checkbox" id="option-nose" name="option" value="nose" checked>
+              <label for ="option-nose" class="form__option-label">Сделать пуньк в нос</label>
+              <input class="form__option-checkbox visually-hidden" type="checkbox" id="option-yummy" name="option" value="yummy" checked>
+              <label for ="option-yummy" class="form__option-label form__option-label--second">Угостить вкусняшкой</label>
+            </section>
+            <section class="form__contacts">
+              <h3 class="form__contacts-title">Контакты для связи</h3>
+              <label class="form__contacts-label">Ваше имя
+                <input class="form__contacts-name" type="text" name="user-name">
+              </label>
+              <label class="form__contacts-label form__contacts-label--last">Email
+                <input class="form__contacts-email" type="email" name="user-email" placeholder="youremail@catmail.org">
+              </label>
+              <p class="form__contacts-note">Мы вышлем вам фото довольного кошачьего лица</p>
+            </section>
+            <div class="form__button-wrap">
+            <button class="button form__button" type="submit">Отправить</button>
+            </div>
+          </form>
+          <article class="message__gallery">
+            <h2 class="message__gallery-title">Довольные коты</h2>
+            <ul class="message__gallery-list">
+              <li class="message__gallery-photo message__gallery-photo--1"></li>
+              <li class="message__gallery-photo message__gallery-photo--2"></li>
+              <li class="message__gallery-photo message__gallery-photo--3"></li>
+            </ul>
           </article>
         </section>
       </main>

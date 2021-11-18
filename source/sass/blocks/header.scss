@@ -2,10 +2,21 @@
 .header {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
+//header-logo
 
 .header__logo-wrap {
   flex-grow: 1;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 15px;
+  }
 }
 
 .header__logo-image {
@@ -21,6 +32,8 @@
   }
 }
 
+//header__menu-list
+
 .header__menu-list {
   display: flex;
   padding-top: 10px;
@@ -29,6 +42,11 @@
   list-style: none;
   cursor: pointer;
   color: $light-blue;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .header__menu-item a {
@@ -44,27 +62,28 @@
   &:active {
     color: $blue;
   }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-right: 0;
+  }
 }
 
+.header__menu-item:not(:nth-last-child(1)) {
+  @media (max-width: $mobile-breakpoint) {
+    margin-right: 19px;
+  }
+}
+
+//header-button
+
 .header__menu-user-button {
-  display: flex;
-  padding: 6px 29px 5px 29px;
-  margin-top: 22px;
-  font-family: "PT Sans", "Arial", sans-serif;
-  line-height: 21px;
+  padding: 6px 29px;
   width: 100px;
   height: 32px;
-  background-color: $blue2;
-  color: $white;
-  border-radius: 4px;
+  margin-top: 22px;
 
-  &:hover {
-    background-color: $light-blue;
-  }
-
-  &:active {
-    background-color: $blue;
-    color: $white-opacity;
+  @media (max-width: $mobile-breakpoint) {
+    margin-top: 18px;
   }
 }
 

@@ -1,0 +1,236 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+
+//message-text
+
+.form__text {
+  margin-bottom: 29px;
+}
+
+.form__text-title {
+  margin: 0 0 16px;
+  font-family: "PT Sans Narrow";
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.form__text textarea {
+  width: 660px;
+  height: 160px;
+  padding: 9px 10px;
+
+  &:focus {
+    border: 2px solid $light-blue;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 335px;
+  }
+}
+
+//message-options
+
+.form__options {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.form__options-title {
+  margin: 0 0 18px;
+  font-family: "PT Sans Narrow";
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.form__option-checkbox + label {
+  cursor: pointer;
+}
+
+.form__option-label {
+  width: 190px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  position: relative;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 21px;
+  padding-left: 34px;
+  margin-bottom: 32px;
+}
+
+.form__option-label--second {
+  margin-bottom: 0;
+}
+
+.form__option-label::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+
+.form__option-checkbox:hover + label::before {
+  border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.form__option-checkbox {
+  position: relative;
+}
+
+.form__option-checkbox:active + label::before {
+  border: 2px solid $light-blue;
+  background-image: url("../img/checkbox/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__option-checkbox:checked + label::before {
+  background-image: url("../img/checkbox/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+//message-contacts
+
+.form__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 65px;
+  }
+}
+
+.form__contacts-title {
+  margin: 0 0 15px;
+  font-family: "PT Sans Narrow";
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: normal;
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-bottom: 20px;
+  }
+}
+
+.form__contacts-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 21px;
+  margin-bottom: 20px;
+
+  @media (max-width: $mobile-breakpoint) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 21px;
+  }
+}
+
+.form__contacts-label--last {
+  margin-bottom: 5px;
+}
+
+.form__contacts-name {
+  flex-grow: 1;
+  max-width: 566px;
+  height: 32px;
+
+  &:focus {
+    border: 2px solid $light-blue;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-top: 10px;
+    width: 335px;
+  }
+}
+
+.form__contacts-email {
+  flex-grow: 1;
+  max-width: 566px;
+  height: 32px;
+
+  &:focus {
+    border: 2px solid $light-blue;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  &::placeholder {
+    padding-left: 8px;
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    margin-top: 10px;
+    width: 335px;
+  }
+}
+
+.form__contacts-note {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  color: $grey;
+  margin: 0;
+  padding-left: 95px;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-left: 0;
+  }
+}
+
+//submit-button
+
+.form__button {
+  position: relative;
+  width: 160px;
+  height: 48px;
+  padding: 12px 22px 11px 46px;
+  font-size: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 16px;
+    top: 15px;
+    left: 22px;
+    background-image: url("../../img/paw.svg");
+
+    @media (max-width: $mobile-breakpoint) {
+      top: 15px;
+      left: 110px;
+    }
+  }
+
+  @media (max-width: $mobile-breakpoint) {
+    width: 335px;
+  }
+}
+
+.form__button-wrap {
+  padding-left: 242px;
+
+  @media (max-width: $mobile-breakpoint) {
+    padding-left: 0;
+  }
+}

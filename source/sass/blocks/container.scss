@@ -1,12 +1,14 @@
 .container {
   width: $desktop-width;
-  margin: 84px 100px;
-  padding: 0;
+  margin: 0 auto;
+  padding-top: 84px;
+  padding-bottom: 88px;
 }
 
 @media (max-width: $mobile-breakpoint) {
   .container {
     width: $mobile-width;
-    margin: 34px 20px;
+    margin: 0 auto;
+    padding-top: 34px;
   }
 }
